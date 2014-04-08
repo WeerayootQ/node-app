@@ -20,7 +20,7 @@ routes = require('./routes/user')(app);
 routes = require('./routes/task')(app);
 
 // Connect to DB
-mongoose.connect ( "mongodb://localhost/models", function (err, res) {
+mongoose.connect ( "mongodb://localhost/buzzapp", function (err, res) {
     if (err) {
         console.log ( "ERROR : Connecting to Database" + err );
     } else {
